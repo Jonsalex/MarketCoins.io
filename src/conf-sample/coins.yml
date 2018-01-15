@@ -1,0 +1,21 @@
+# Devcoin
+dvc:
+    enabled: true
+    unit: dvc
+    name: Devcoin
+    symbol: 'Ð'
+    config_file: '~/.devcoin/devcoin.conf'
+    config_rpcserver: '127.0.0.1'
+    minconf:
+        givetip: 1
+        withdraw: 6
+    txmin:
+        givetip: 0.1
+        withdraw: 0.5
+    txfee: 0.5
+    explorer:
+        address: 'http://devcoinblockexplorer.info/address/'
+        transaction: 'http://devcoinblockexplorer.info//tx/'
+    regex:
+        address: '(1[1-9a-z]{20,40})'
+        units: '(dvc|devcoin|devcoins|Ð)'
